@@ -41,11 +41,6 @@ var showSchema =  mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId, ref: 'User'
   }],
   seasons : []
- /*subscribers: [{
-    _id : false,
-    userId :  { type: String },
-    email :{ type: String }
-  }]*/
 },{strict:false},{ autoIndex: false },{id : false})
 
 var Show = mongoose.model('Show', showSchema);
